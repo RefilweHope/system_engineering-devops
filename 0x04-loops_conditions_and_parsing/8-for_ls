@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Displays only the content after the first dash from each filename
+
+for item in *
+do
+  echo "${item#*-}"
+done
