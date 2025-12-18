@@ -1,10 +1,11 @@
-#!/usr/bin/env bash
-# A Bash script that prints a message every 2 seconds and handles SIGTERM
+#!/bin/bash
 
-trap 'echo "I am invincible!!!"' SIGTERM
+# Handle SIGTERM signal
+trap 'echo "I am invincible!! !"' SIGTERM
 
+# Infinite loop
 while true
 do
-    echo "To infinity and beyond"
-    sleep 2
+	echo "To infinity and beyond"
+	sleep 2
 done
